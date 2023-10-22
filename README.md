@@ -2,6 +2,8 @@
 
 [Spring Boot](http://projects.spring.io/spring-boot/) application [3.1.2](https://spring.io/blog/2023/07/20/spring-boot-3-1-2-available-now)
 
+[![CI/CD Pipeline](https://github.com/Alejandro-XIII/back/actions/workflows/build.yml/badge.svg)](https://github.com/Alejandro-XIII/back/actions/workflows/build.yml)
+
 ## Requisitos
 
 Para construir y ejecutar la aplicación necesita:

@@ -3,6 +3,17 @@
 [Spring Boot](http://projects.spring.io/spring-boot/) application [3.1.2](https://spring.io/blog/2023/07/20/spring-boot-3-1-2-available-now)
 
 [![CI/CD Pipeline](https://github.com/Alejandro-XIII/back/actions/workflows/build.yml/badge.svg)](https://github.com/Alejandro-XIII/back/actions/workflows/build.yml)
+[![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=Alejandro-XIII_back&metric=alert_status)](https://sonarcloud.io/summary/new_code?id=Alejandro-XIII_back)
+[![Reliability Rating](https://sonarcloud.io/api/project_badges/measure?project=Alejandro-XIII_back&metric=reliability_rating)](https://sonarcloud.io/summary/new_code?id=Alejandro-XIII_back)
+[![Duplicated Lines (%)](https://sonarcloud.io/api/project_badges/measure?project=Alejandro-XIII_back&metric=duplicated_lines_density)](https://sonarcloud.io/summary/new_code?id=Alejandro-XIII_back)
+[![Vulnerabilities](https://sonarcloud.io/api/project_badges/measure?project=Alejandro-XIII_back&metric=vulnerabilities)](https://sonarcloud.io/summary/new_code?id=Alejandro-XIII_back)
+[![Bugs](https://sonarcloud.io/api/project_badges/measure?project=Alejandro-XIII_back&metric=bugs)](https://sonarcloud.io/summary/new_code?id=Alejandro-XIII_back)
+[![Security Rating](https://sonarcloud.io/api/project_badges/measure?project=Alejandro-XIII_back&metric=security_rating)](https://sonarcloud.io/summary/new_code?id=Alejandro-XIII_back)
+[![Maintainability Rating](https://sonarcloud.io/api/project_badges/measure?project=Alejandro-XIII_back&metric=sqale_rating)](https://sonarcloud.io/summary/new_code?id=Alejandro-XIII_back)
+[![Code Smells](https://sonarcloud.io/api/project_badges/measure?project=Alejandro-XIII_back&metric=code_smells)](https://sonarcloud.io/summary/new_code?id=Alejandro-XIII_back)
+[![Lines of Code](https://sonarcloud.io/api/project_badges/measure?project=Alejandro-XIII_back&metric=ncloc)](https://sonarcloud.io/summary/new_code?id=Alejandro-XIII_back)
+[![Coverage](https://sonarcloud.io/api/project_badges/measure?project=Alejandro-XIII_back&metric=coverage)](https://sonarcloud.io/summary/new_code?id=Alejandro-XIII_back)
+[![Technical Debt](https://sonarcloud.io/api/project_badges/measure?project=Alejandro-XIII_back&metric=sqale_index)](https://sonarcloud.io/summary/new_code?id=Alejandro-XIII_back)
 
 ## Requisitos
 

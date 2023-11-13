@@ -6,6 +6,7 @@ import co.udea.ssmu.api.model.Conductor;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import java.util.Comparator;
 import java.util.List;
 import java.util.Optional;
 
@@ -38,4 +39,10 @@ public class ConductorService {
             return conductores;
         } else throw new DriverNotFoundException("No hay conductores con promedio mayor a 4");
     }
+
+    public List<Conductor> clasificarConductoresPorCiudad(String ciudad) {
+        List<Conductor> conductores = dao.findByCiudad(ciudad);
+        return conductores;
+    }
+
 }

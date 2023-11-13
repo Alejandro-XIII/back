@@ -56,5 +56,11 @@ public class ConductorController {
     public String borrarConductor(@PathVariable int id){
         return conductorService.borrar(id);
     }
+
+    @GetMapping("/clasificarPorCiudad/{ciudad}")
+    public ResponseEntity<List<Conductor>> clasificarConductoresPorCiudad(@PathVariable("ciudad") String ciudad) {
+        List<Conductor> conductores = conductorService.clasificarConductoresPorCiudad(ciudad);
+        return new ResponseEntity<List<Conductor>>(conductores, HttpStatus.ACCEPTED);
+    }
 }
 

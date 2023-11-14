@@ -41,12 +41,6 @@ public class ConductorController {
         throw new ModelNotFoundException("Id de conductor invalid");
     }
 
-    @GetMapping("/mejoresConductores")
-    public ResponseEntity<List<Conductor>> verMejorConductores(){
-        List<Conductor> list = conductorService.verMejorConductores();
-        return new ResponseEntity<List<Conductor>>(list, HttpStatus.ACCEPTED);
-    }
-
     @PutMapping
     public Conductor actualizarService(@RequestBody Conductor conductor){
         return conductorService.actualizar(conductor);
@@ -61,6 +55,12 @@ public class ConductorController {
     public ResponseEntity<List<Conductor>> clasificarConductoresPorCiudad(@PathVariable("ciudad") String ciudad) {
         List<Conductor> conductores = conductorService.clasificarConductoresPorCiudad(ciudad);
         return new ResponseEntity<List<Conductor>>(conductores, HttpStatus.ACCEPTED);
+    }
+
+    @GetMapping("/clasificarPorPromedio/{promedio}")
+    public ResponseEntity<List<Conductor>> clasificarConductoresPorPromedio(@PathVariable("promedio") int promedio){
+        List<Conductor> list = conductorService.clasificarConductoresPorPromedio(promedio);
+        return new ResponseEntity<List<Conductor>>(list, HttpStatus.ACCEPTED);
     }
 }
 

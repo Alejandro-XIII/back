@@ -10,12 +10,9 @@ import java.util.List;
 
 @Repository
 public interface IConductorDAO extends CrudRepository<Conductor,Integer> {
-    @Query("FROM Conductor c WHERE c.promedioCalificacion>4")
-    public List<Conductor> findByPromedioCalificacionGreaterThan();
-
     @Query("FROM Conductor c WHERE c.ciudadActual=:ciudad")
     public List<Conductor> findByCiudad(@Param("ciudad") String ciudad);
 
-
-
+    @Query("FROM Conductor c WHERE c.promedioCalificacion=:promedio")
+    public List<Conductor> findByPromedioCalificacionGreaterThan(@Param("promedio") int promedio);
 }

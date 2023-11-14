@@ -33,16 +33,18 @@ public class ConductorService {
         conductorExistente.setPlaca(t.getPlaca());
         return dao.save(conductorExistente);
     }
-    public List<Conductor> verMejorConductores() throws DriverNotFoundException {
-        List<Conductor> conductores = dao.findByPromedioCalificacionGreaterThan();
-        if (conductores.size()>0){
-            return conductores;
-        } else throw new DriverNotFoundException("No hay conductores con promedio mayor a 4");
-    }
 
     public List<Conductor> clasificarConductoresPorCiudad(String ciudad) {
         List<Conductor> conductores = dao.findByCiudad(ciudad);
-        return conductores;
+        if (conductores.size()>0){
+            return conductores;
+        } else throw new DriverNotFoundException("No hay conductores de "+ciudad);
     }
 
+    public List<Conductor> clasificarConductoresPorPromedio(int promedio) throws DriverNotFoundException {
+        List<Conductor> conductores = dao.findByPromedioCalificacionGreaterThan(promedio);
+        if (conductores.size()>0){
+            return conductores;
+        } else throw new DriverNotFoundException("No hay conductores con promedio igual a "+promedio);
+    }
 }
